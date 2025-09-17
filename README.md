@@ -16,7 +16,7 @@ You will:
 
 - `main`: Original story starter
 - `hero-path`: _[Describe your changes here]_
-- `villain-path`: _[Describe your changes here]_
+- `villain-path`: In the right branch, the user meets a talking squirrel and can duel, trick, or ignore it—each path spirals into darker choices like cheating, enslaving, bargaining for power, or binding forest whispers, ultimately leading the user to control, corruption, and a growing dominion over the woods.
 
 ## Final Checklist
 
