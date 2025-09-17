@@ -15,7 +15,7 @@ You will:
 ## Branch Summaries
 
 - `main`: Original story starter
-- `hero-path`: _[Describe your changes here]_
+- `hero-path`: In the left branch, the user discovers a glowing sword in a stone and can choose to pull it, inspect it, or leave it; pulling leads to attempts to free the sword and deciding whether to keep or return it, while inspecting reveals runes or a hidden pebble, each offering calm, mystical outcomes that guide the user safely out of the forest.
 - `villain-path`: _[Describe your changes here]_
 
 ## Final Checklist
