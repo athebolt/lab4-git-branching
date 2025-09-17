@@ -1,0 +1,28 @@
+Branches in this repo (with details):
+
+- hero-path
+  SHA: e5ca759274b54de965639234bcfe44b259dd4dbf
+  Commits: 4
+  Recent commits:
+    e5ca759 | Author: Siyuan Jiang <2203934+sjiang1@users.noreply.github.com> | Committer: Siyuan Jiang <2203934+sjiang1@users.noreply.github.com> | Date: 2025-09-04T12:20:33-04:00 | Added heroic dragon scene
+    bff91b1 | Author: Siyuan Jiang <2203934+sjiang1@users.noreply.github.com> | Committer: Siyuan Jiang <2203934+sjiang1@users.noreply.github.com> | Date: 2025-09-04T12:17:36-04:00 | Added a center path.
+    02460da | Author: Siyuan Jiang <2203934+sjiang1@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-04T12:10:16-04:00 | Create README.md
+    0a85c05 | Author: Siyuan Jiang <2203934+sjiang1@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-04T12:08:32-04:00 | Create story.py
+- main
+  SHA: 96404008ae0f8c0727bff979fcc45ec37cb55ea4
+  Commits: 23
+  Recent commits:
+    9640400 | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-10T15:58:22-04:00 | Enhance branch-info.yml to include committer info
+    be1712d | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-10T18:59:53Z | Auto-update branch-info.txt
+    9ac3acb | Author: LongNguyenThanhLe <149942804+LongNguyenThanhLe@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-10T14:59:46-04:00 | Enhance branch-info generation with commit details
+    46f1f71 | Author: GitHub Actions <actions@github.com> | Committer: GitHub Actions <actions@github.com> | Date: 2025-09-10T16:28:48Z | Auto-update branch-info.txt
+    c85146a | Author: Test Student <144061513+teststudentcosc381@users.noreply.github.com> | Committer: Test Student <144061513+teststudentcosc381@users.noreply.github.com> | Date: 2025-09-10T12:28:33-04:00 | Merge branch 'main' of github.com:EMU-COSC381-Prep/2025fall-4-git-basics-branching
+- villain-path
+  SHA: ee423f1fa675c14d48a5e70657a52d235ca93e73
+  Commits: 5
+  Recent commits:
+    ee423f1 | Author: Siyuan Jiang <2203934+sjiang1@users.noreply.github.com> | Committer: Siyuan Jiang <2203934+sjiang1@users.noreply.github.com> | Date: 2025-09-04T12:24:09-04:00 | Added run-away scene
+    7992a8a | Author: Siyuan Jiang <2203934+sjiang1@users.noreply.github.com> | Committer: Siyuan Jiang <2203934+sjiang1@users.noreply.github.com> | Date: 2025-09-04T12:23:01-04:00 | Added robbery scene
+    bff91b1 | Author: Siyuan Jiang <2203934+sjiang1@users.noreply.github.com> | Committer: Siyuan Jiang <2203934+sjiang1@users.noreply.github.com> | Date: 2025-09-04T12:17:36-04:00 | Added a center path.
+    02460da | Author: Siyuan Jiang <2203934+sjiang1@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-04T12:10:16-04:00 | Create README.md
+    0a85c05 | Author: Siyuan Jiang <2203934+sjiang1@users.noreply.github.com> | Committer: GitHub <noreply@github.com> | Date: 2025-09-04T12:08:32-04:00 | Create story.py
