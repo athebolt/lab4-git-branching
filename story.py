@@ -26,53 +26,68 @@ def neutral_path():
 
 def left_path():
     print("You walk left and find a mysterious glowing sword stuck in a stone.")
-    act = input("What do you do? (pull/inspect/leave): ").strip().lower()
+    choice = input("Do you pull it, inspect it, or leave it alone? (pull/inspect/leave): ").strip().lower()
 
-    if act == "pull":
-        print("With a steady breath, you pull. The sword slides free, light spilling through the trees.")
-        hero_quest()
-    elif act == "inspect":
-        print("You check the clearing. Under roots you find a worn shield and a faded map pointing to an old tower.")
-        take = input("Take the gear? (yes/no): ").strip().lower()
-        if take == "yes":
-            print("You strap on the shield and tuck the map away.")
+    if choice == "pull":
+        left_pull()
+    elif choice == "inspect":
+        left_inspect()
+    elif choice == "leave":
+        print("You decide not to disturb it and follow a soft trail of moss out of the clearing.")
+    else:
+        print("You wait beside the stone until the glow fades, then wander back the way you came.")
+
+
+def left_pull():
+    print("You grip the hilt. The sword hums softly under your fingers.")
+    effort = input("How do you try to free it? (one/two/back): ").strip().lower()
+
+    if effort == "one":
+        print("With one hand it barely moves. Your palm tingles.")
+        second_try = input("Try with both hands or step back? (two/back): ").strip().lower()
+        if second_try == "two":
+            left_sword_out()
         else:
-            print("You leave the gear, trusting your feet and your nerve.")
-        hero_quest()
-    elif act == "leave":
-        print("You leave the sword for another and follow a narrow trail out of the clearing.")
-        hero_quest()
+            print("You let go. The humming stops. A calm path leads you away from the clearing.")
+    elif effort == "two":
+        left_sword_out()
     else:
-        print("You hesitate. A distant horn echoes through the forest.")
-        hero_quest()
+        print("You release the hilt. The forest sighs, and you leave quietly.")
 
 
-def hero_quest():
-    print("A limping traveler bursts from the brush. 'Please—our village! A dragon nests in the old tower.'")
-    help_choice = input("Will you help? (help/ignore): ").strip().lower()
+def left_sword_out():
+    print("With a slow scrape, the blade slides free. A pale beam points to a hidden footpath.")
+    decision = input("Do you keep the sword or return it? (keep/return): ").strip().lower()
 
-    if help_choice == "help":
-        dragon_encounter()
-    elif help_choice == "ignore":
-        print("You start to walk away, then hear the villagers' cries on the wind. You turn back.")
-        dragon_encounter()
+    if decision == "keep":
+        print("You keep the blade. The beam guides you to the forest edge. A new journey waits, but not tonight.")
+    elif decision == "return":
+        print("You set the sword back. The light dims, and a gentle breeze carries you to a safe road home.")
     else:
-        print("You say nothing, but your feet are already moving toward the tower.")
-        dragon_encounter()
+        print("You hesitate, then wrap the sword in leaves and rest. At dawn, you walk out quietly, unsure but at peace.")
 
 
-def dragon_encounter():
-    print("You reach the ivy-choked tower. The dragon coils on a broken spire, eyes like embers.")
-    tactic = input("How do you face it? (fight/trick): ").strip().lower()
+def left_inspect():
+    print("You study faint runes around the stone. The glow steadies, like a calm breath.")
+    action = input("Do you read the runes, knock on the stone, or leave? (read/knock/leave): ").strip().lower()
 
-    if tactic == "fight":
-        print("You stand your ground and strike true. The dragon takes wing and flees. The village is safe.")
-    elif tactic == "trick":
-        print("You ring a rusted bell and toss a torch into the empty granary—by design. The dragon chases sound and fire far away.")
+    if action == "read":
+        print("The runes speak of intent over strength.")
+        vow = input("Do you make a quiet pledge to do no harm? (pledge/back): ").strip().lower()
+        if vow == "pledge":
+            print("The stone warms. The sword loosens without effort.")
+            left_sword_out()
+        else:
+            print("You step back. The glow softens, and a narrow track leads you safely away.")
+    elif action == "knock":
+        print("You tap the stone. A tiny panel opens to reveal a smooth, warm pebble.")
+        pebble = input("Do you take the pebble or leave it? (take/leave): ").strip().lower()
+        if pebble == "take":
+            print("The pebble glows in your pocket and guides you to a quiet stream and an easy path home.")
+        else:
+            print("You close the panel. The forest settles. You leave the clearing unchanged.")
     else:
-        print("You raise your voice and speak calmly. The dragon blinks, then lifts away, leaving the tower in peace.")
-
-    print("By nightfall, the villagers call you a hero, and the forest feels lighter.")
+        print("You leave the mystery for another day and follow the wind out of the trees.")
 
 
 def right_path():
