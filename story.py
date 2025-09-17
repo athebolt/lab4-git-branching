@@ -30,6 +30,67 @@ def left_path():
 
 def right_path():
     print("You walk right and encounter a talking squirrel who challenges you to a duel.")
+    choice = input("How do you respond? (duel/trick/ignore): ").strip().lower()
+
+    if choice == "duel":
+        right_duel()
+    elif choice == "trick":
+        right_trick()
+    elif choice == "ignore":
+        print("You brush past the squirrel. It chatters angrily as shadows gather behind you.")
+        follow = input("Do you follow the shadows or keep walking? (follow/walk): ").strip().lower()
+        if follow == "follow":
+            print("You follow them to a hollow stump and accept their whisper. Your eyes darken; the forest bends to your will.")
+        else:
+            print("You keep walking. The forest remembers your coldness; a quiet cruelty settles in your step.")
+    else:
+        print("You say nothing. The squirrel flees as a chill settles over the path.")
+
+
+def right_duel():
+    print("The squirrel flourishes a twig like a sword.")
+    tactic = input("Do you fight fair or cheat? (fair/cheat/back): ").strip().lower()
+
+    if tactic == "fair":
+        print("You fight fair and lose. Laughter echoes; pride curdles.")
+        choice = input("Do you accept defeat or swear revenge? (accept/revenge): ").strip().lower()
+        if choice == "accept":
+            print("You walk away humbled, yet a small meanness takes root.")
+        else:
+            print("You swear revenge. The trees darken and seem to approve.")
+    elif tactic == "cheat":
+        print("You fling dirt and win easily. The forest falls silent.")
+        mercy = input("Do you spare the squirrel, enslave it, or banish it? (spare/enslave/banish): ").strip().lower()
+        if mercy == "spare":
+            print("You let it go, but the taste of power lingers—sweet and cold.")
+        elif mercy == "enslave":
+            print("You bind the squirrel to your will. Whispers crown you the spiteful warden of this trail.")
+        else:
+            print("You banish it from its tree. The forest bows to your unkindness.")
+    else:
+        print("You step back from the duel. A petty hunger for control follows you down the path.")
+
+
+def right_trick():
+    print("You grin and speak in circles. The squirrel squints, uncertain.")
+    ploy = input("Do you bargain or steal? (bargain/steal/back): ").strip().lower()
+
+    if ploy == "bargain":
+        print("You offer 'protection' for a price. It hands you an acorn etched with tiny eyes.")
+        promise = input("Do you keep your word or break it? (keep/break): ").strip().lower()
+        if promise == "keep":
+            print("You keep your word—then quietly raise the price. Fear becomes your guide.")
+        else:
+            print("You break it at once. The acorn opens and the voices serve your will.")
+    elif ploy == "steal":
+        print("While it hesitates, you swipe the acorn of voices.")
+        use = input("Do you listen to the acorn or crush it? (listen/crush): ").strip().lower()
+        if use == "listen":
+            print("Whispered maps of secrets fill your head. Paths bend to your command.")
+        else:
+            print("You crush it; a hush falls. The forest grows mean in your image.")
+    else:
+        print("You stop scheming for a moment. The chance passes, but you feel colder.")
 
 
 if __name__ == "__main__":
